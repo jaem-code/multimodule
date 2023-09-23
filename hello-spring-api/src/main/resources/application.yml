@@ -7,6 +7,7 @@ spring:
 
   config:
     import:
+      추가 필요//- db-main.yml
       - logging.yml
       - db-main.yml
 ---
