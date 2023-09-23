@@ -1,14 +1,14 @@
 package multi.module.hellospring
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.autoconfigure.domain.EntityScan
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan
 import org.springframework.boot.runApplication
 
-@ConfigurationPropertiesScan
+@EntityScan(basePackages = ["multi.module.hellospring"])
 @SpringBootApplication(
 	scanBasePackages = [
-		"multi.module.hellospring.domain",
-		"multi.module.hellospring.storage",
+		"multi.module.hellospring",
 	])
 class HelloSpringApplication
 
